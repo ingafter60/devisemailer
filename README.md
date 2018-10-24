@@ -62,6 +62,49 @@ HOW TO - c9.io with Github
 Section 5:  App Time - Creating Public Pages
 
     14. Hello World So 1996
+    
+        Ways to start server
+        
+        First Way:
         > start server: rails server -p $PORT -b $IP + enter
         > click the pop up link to open the browser
+        > stop server: ctrl + c 
         
+        Second Way:
+        > click Run Project button (on top bar menu)
+        > click the pop up link to open the browser
+        > stop server: click RED button (left side of the terminal)
+        
+        Making pages
+        > keep server running
+        > create new branch: git checkout -b pages 
+        > craete root route 
+        > refresh the server, will see error (Routing Error uninitialized constant PagesController)
+        > rails g controller pages
+        > refresh browser (Unknown action, The action 'index' could not be found for PagesController)
+        > create index action in controller
+        > create an index.html.erb file in views/pages dir
+        > refresh the browser
+        
+    15. Git Time
+        
+        > git add -A
+        > git commit -m "Created pages controller with index action"
+        > git push origin pages 
+        > git checkout master 
+        
+    16. Generation Control - Generating Controllers
+        > rails destroy controller pages
+        > rails g controller pages index contact about
+        > create root route
+        > About Route:
+          you can make route like this for contact page: get 'hello', to: 'pages#contact'
+          https://devisemailer-ing.c9users.io/hello
+        > undo About Route:
+        > Git time:
+        > git add -A 
+        > git commit -m "Created pages controller with index about and contact action"
+        > git push origin pages  
+        > git checkout master
+        > refresh :)
+   
