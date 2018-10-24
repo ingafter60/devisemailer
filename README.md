@@ -93,16 +93,3 @@ Section 5:  App Time - Creating Public Pages
         > git push origin pages 
         > git checkout master
         
-    16. Generation Control - Generating Controllers
-        > rails destroy controller pages
-        > rails g controller pages index contact about
-        > create root route
-        > About Route:
-          you can make route like this for contact page: get 'hello', to: 'pages#contact'
-          https://devisemailer-ing.c9users.io/hello
-        > refresh :)
-        > undo About Route:
-        > Git time:
-        > git add -A 
-        > git commit -m "Created pages controller with index about and contact action"
-        > git push origin master
