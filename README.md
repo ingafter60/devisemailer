@@ -59,3 +59,9 @@ HOW TO - c9.io with Github
 	Making some changes on Gemfile for git testing 
 	3 minutes ago 
 
+Section 5:  App Time - Creating Public Pages
+
+    14. Hello World So 1996
+        > start server: rails server -p $PORT -b $IP + enter
+        > click the pop up link to open the browser
+        
