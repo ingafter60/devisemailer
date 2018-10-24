@@ -59,3 +59,36 @@ HOW TO - c9.io with Github
 	Making some changes on Gemfile for git testing 
 	3 minutes ago 
 
+Section 5:  App Time - Creating Public Pages
+
+    14. Hello World So 1996
+    
+        Ways to start server
+        
+        First Way:
+        > start server: rails server -p $PORT -b $IP + enter
+        > click the pop up link to open the browser
+        > stop server: ctrl + c 
+        
+        Second Way:
+        > click Run Project button (on top bar menu)
+        > click the pop up link to open the browser
+        > stop server: click RED button (left side of the terminal)
+        
+        Making pages
+        > keep server running
+        > create new branch: git checkout -b pages 
+        > craete root route 
+        > refresh the server, will see error (Routing Error uninitialized constant PagesController)
+        > rails g controller pages
+        > refresh browser (Unknown action, The action 'index' could not be found for PagesController)
+        > create index action in controller
+        > create an index.html.erb file in views/pages dir
+        > refresh the browser
+        
+    15. Git Time
+        
+        > git add -A
+        > git commit -m "Created pages controller with index action"
+        > git push origin pages 
+        > git checkout master
